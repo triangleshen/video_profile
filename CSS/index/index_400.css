@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	background:rgba(219,219,219,1.00);
+	font-family: 'PT Sans', sans-serif,'Noto Sans TC';;
+	font-weight: 400,700;
+}
+
+
+/* ================== nav bar  ==================*/
+
+nav{
+	position: fixed;
+	width:100%;
+	background:rgba(255,255,255,0.20);
+	margin:auto;
+	padding: 10px 0px;
+	text-align:right;
+	z-index: 2000;
+}
+
+nav ul{
+	margin: 0; 
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav li a{
+	display: inline-block;
+	padding:20px;
+	color: #5A5A5A;
+	text-decoration: none;
+	font-weight:600;
+}
+
+nav li a:hover{
+	color: #6297E9;
+}
+
+
+/*================== banner ==================*/
+.banner{
+	margin:0px auto 0px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 1500px;
+	height: 800px;
+	background: url(../image/banner.png) no-repeat;
+	background-size: 100%; /*100%的圖片塞在這個格子裡 = 顯示完整的圖片，不然會太大*/
+	background-position: 0px -60px;
+
+}
+
+.banner_text{
+	position: absolute;
+	left: 10%;
+	bottom:3%;
+	border: solid 0px #000000;
+}
+
+.banner_text li{
+	list-style:none;
+}
+
+.banner_text a{
+	padding:10px;
+	color: #1F1F1F;
+	text-decoration: none;
+	font-size:25px;
+	font-weight:bold;
+	line-height:60px;
+}
+
+.banner_text a:hover{
+	color: #6297E9;
+}
+
+/*================== SNS ==================*/
+.SNS{
+	top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 19px;
+    position: fixed;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 80px;
+    height: 450px;
+	z-index: 1000;
+	border: solid 0px #000000;
+}
+
+.SNSUL{
+	border: solid 0px #6F0001;
+}
+
+/*================== what's news ==================*/
+
+#new{
+	width: 80%;
+	margin:auto;
+	margin-top:50px;
+	background: rgba(255,255,255,0.80);
+	padding:15px;
+}
+
+/*================== footer ==================*/
+footer{
+	clear: both;
+	text-align: center;
+	color: rgba(65,65,65,1.00);
+}

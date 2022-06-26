@@ -1,0 +1,310 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	background:rgba(219,219,219,1.00);
+	font-family: 'PT Sans', sans-serif,'Noto Sans TC';;
+	font-weight: 400,700;
+}
+
+::-moz-selection{
+	color: #FFF;
+	background: #F1C300;
+}
+::selection{ 
+	color: #FFF;
+	background: #F1C300;
+}
+
+.Logo{
+	position: absolute;
+	top:1%;
+	left:2%;
+	width: 544px;
+	height: 180px;
+	z-index: 2500;
+}
+
+
+/* ================== nav bar  ==================*/
+nav{
+	position: fixed;
+	top:0;
+	width:100%;
+	background:rgba(219,219,219,0.50);
+	margin:auto;
+	padding: 5px 0px;
+	text-align:right;
+	z-index: 2000;
+}
+
+nav ul{
+	margin: 0; 
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav li a{
+	display: inline-block;
+	padding:20px;
+	color: #5A5A5A;
+	text-decoration: none;
+	font-weight:600;
+}
+
+nav li a:hover{
+	color: rgba(241,193,0,1.00);
+}
+
+
+/*================== SNS ==================*/
+.SNS{
+	position: fixed;
+	top: 40%;
+	right: 0;
+    margin-right: 20px;
+	z-index: 1000;
+}
+
+.fbbox,.twbox,.igbox,.vibox,.ytbox{
+	width:30px;
+	height:30px;
+	margin: 10px 0px 10px;
+	background:url(../../image/SNS.png) no-repeat;
+	background-size: 200%;
+	background-position:0px 0px;
+}
+
+.fbbox:hover{background-position:-30px 0px;}
+
+
+.twbox{
+	background-position:0px -30px;
+}
+
+.twbox:hover{
+	background-position:-30px -30px;
+}
+
+.igbox{
+	background-position:0px -60px;
+}
+
+.igbox:hover{
+	background-position:-30px -60px;
+}
+
+.vibox{
+	background-position:0px -90px;
+}
+
+.vibox:hover{background-position:-30px -90px;}
+
+.ytbox{
+	background-position:0px -120px;
+}
+
+.ytbox:hover{background-position:-30px -120px;}
+
+
+
+/* ================== about me  ==================*/
+section{
+	width: 100%;
+	height: 500px;
+	top:200px;
+	margin: auto;
+	background: rgba(255,255,255,0.81);
+	
+	-webkit-animation-name: anib;
+	animation-name: anib;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+}
+
+@keyframes anib{
+	from {opacity:0;}
+	to {opacity:1.0;}
+}
+
+.about{
+	width: 70%;
+	min-width: 500px;
+	padding:10px;
+	box-sizing: border-box;
+	margin:auto;
+	height: 500px;
+	text-align: center;
+}
+
+.propic,.about_me_text{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.propic{
+	height: 190px;
+	margin: 200px auto 10px;
+	padding:30px;
+	border-right: solid 2px #2E2E2E;
+}
+
+
+.about_me_text{
+	display:inline-table;
+	margin: 180px 0px 10px 0px;
+	padding: 10px;
+	line-height: 2em;
+}
+
+
+/* ================== pic bar  ==================*/
+.detail{
+	clear: both;
+	width: 70%;
+	margin: 20px auto 0px;
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4; 
+	-webkit-column-gap: 3px;
+	-moz-column-gap: 3px; 
+	column-gap: 3px; 
+	
+	-webkit-animation-name: anid;
+	animation-name: anid;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+}
+
+@keyframes anid{
+	from {opacity:0;}
+	to {opacity:1.0;}
+}
+
+article{
+	width: 100%;
+	position: relative;
+	filter: grayscale(90%) brightness(90%);
+}
+
+article:hover{
+	filter: grayscale(0%) brightness(100%);
+	-webkit-transition: filter 0.5s;
+	transition: filter 0.5s;
+}
+
+.overpic{
+	position:absolute;
+	box-sizing:border-box;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.00);
+}
+
+article:hover .overpic{
+	background: rgba(0,0,0,0.59);
+	-wenkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.pic_text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%); 
+	color: rgba(255,255,255,0.00);
+	font-size: 22px;
+	letter-spacing:3px;
+}
+
+article:hover .pic_text{
+	color: rgba(255,255,255,1.00);
+	-wenkit-transition: 0.8s ease;
+	transition: 0.8s ease;
+}
+
+
+/* ================== contact  ==================*/
+.contact{
+	width: 70%;
+	top:200px;
+	padding:10px;
+	box-sizing: border-box;
+	margin:auto;
+	height: 300px;
+	background: rgba(255,255,255,0.4);
+	text-align: center;
+	border: solid 0px #8A0002;
+	
+	-webkit-animation-name: anic;
+	animation-name: anic;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+}
+
+@keyframes anic{
+	from {opacity:0;}
+	to {opacity:1.0;}
+}
+
+
+.contactbox{
+	width: 33.33%;
+	float: left;
+}
+
+.contactbox h2{
+	line-height: 1.5em;
+}
+
+
+.link{
+	color: rgba(35,23,4,1.00);
+	padding: 10px;
+	text-decoration: none;
+}
+
+.link:hover{
+	color: rgba(212,170,0,1.00);
+}
+
+.link:active{
+	color: rgba(249,200,0,1.00);
+}
+
+.link:visited{
+	color: rgba(115,68,0,1.00);
+}
+
+
+/*================== footer ==================*/
+footer{
+	clear: both;
+	padding: 5px;
+	text-align: center;
+	color: rgba(65,65,65,1.00);
+}
